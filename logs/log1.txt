@@ -1,0 +1,24 @@
+[2023-10-09 21:22:41] Collected 1 tests (test_embedded)
+[2023-10-09 21:22:41] 
+[2023-10-09 21:22:41] Processing test_embedded in uno environment
+[2023-10-09 21:22:41] --------------------------------------------------------------------------------
+[2023-10-09 21:22:41] 
+[2023-10-09 21:22:41] Building & Uploading...
+[2023-10-09 21:22:46] 
+[2023-10-09 21:22:46] Testing...
+[2023-10-09 21:22:46] If you don't see any output for the first 10 secs, please reset board (press reset button)
+[2023-10-09 21:22:46] 
+[2023-10-09 21:22:48] test\test_embedded\run_test_LED.cpp:11:test_set_LED_on_HIGH_value:PASS
+[2023-10-09 21:22:48] test\test_embedded\run_test_LED.cpp:12:test_set_LED_on_LOW_value:PASS
+[2023-10-09 21:22:49] 
+[2023-10-09 21:22:49] -----------------------
+[2023-10-09 21:22:49] 2 Tests 0 Failures 0 Ignored 
+[2023-10-09 21:22:49] OK
+[2023-10-09 21:22:49] 
+[2023-10-09 21:22:49] ----------------- uno:test_embedded [PASSED] Took 7.76 seconds -----------------
+[2023-10-09 21:22:49] 
+[2023-10-09 21:22:49] =================================== SUMMARY ===================================
+[2023-10-09 21:22:49] Environment    Test           Status    Duration
+[2023-10-09 21:22:49] -------------  -------------  --------  ------------
+[2023-10-09 21:22:49] uno            test_embedded  PASSED    00:00:07.759
+[2023-10-09 21:22:49] ================== 2 test cases: 2 succeeded in 00:00:07.759 ==================
