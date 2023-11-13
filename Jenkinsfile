@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     //environment {
-    //    PLATFORMIO_HOME = 'C:\Users\\danny\\OneDrive\\Documents\\.platformio'
+    //    PLATFORMIO_HOME = 'C:\\Users\\danny\\OneDrive\\Documents\\PlatformIO\\Projects\\Test_hardware'
     //}
 
     stages {
@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                bat 'platformio run -e uno'
+                bat 'pio run -v'
             }
         }
         stage('Flash') {
