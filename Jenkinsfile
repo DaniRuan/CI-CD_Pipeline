@@ -9,7 +9,6 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main', url: 'https://github.com/DaniRuan/CI-CD_Pipeline.git'
-                //checkout([$class: 'Git', branches: [[name: '*/main']], userRemoteConfigs: [[url: 'https://github.com/DaniRuan/CI-CD_Pipeline.git']]])
             }
         }
         stage('Build') {
