@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Flash') {
             steps {
-                bat 'avrdude -c usbasp -p m328p -P COM3 -U flash:w:.pioenvs\\uno\\firmware.hex'
+                bat 'avrdude -c usbasp -p m328p -P COM11 -U flash:w:.pioenvs\\nanoatmega328\\firmware.hex'
             }
         }
         stage('Test') {
