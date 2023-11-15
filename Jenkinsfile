@@ -13,7 +13,8 @@ pipeline {
         }
         stage('Build') {
             steps {
-                bat 'pio run -v'
+                bat echo "test"
+                //'pio run -v'
             }
         }
         stage('Flash') {
