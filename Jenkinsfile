@@ -14,7 +14,7 @@ pipeline {
         stage('Build') {
             steps {
                 //bat 'echo test'
-                bat "cd src"; "dir"; "pio run -v"
+                bat 'cd src; dir; pio run -v'
                 //bat 'dir'
                 //bat 'pio run -v'
             }
