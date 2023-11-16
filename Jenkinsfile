@@ -11,16 +11,14 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/DaniRuan/CI-CD_Pipeline.git'
             }
         }
-        /*
-        stage('Flash') {
+        stage('Build') {
             steps {
-                bat 'avrdude -c usbasp -p m328p -P COM11 -U flash:w:.pioenvs\\nanoatmega328\\firmware.hex'
+                bat 'echo System testing started...'
             }
         }
-        */
         stage('Test') {
             steps {
-                bat 'pio test -v'
+                bat 'pio test -vvv'
             }
         }
     }
