@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat 'pio test -d, --project-dir C:\Users\danny\OneDrive\Documents\EDAG\Codes\Test_hardware'
+                bat 'pio test -d, --project-dir C:\\Users\\danny\\OneDrive\\Documents\\EDAG\Codes\\Test_hardware'
             }
         }
     }
