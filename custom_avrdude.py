@@ -11,7 +11,7 @@ def before_upload(source, target, env):
 	# replace the avrdude.conf entry with another path
 	# create new list of flags
 	new_flags = []
-	new_config = "C:\\Users\\danny\\.platformio\\packages\\tool-avrdude\\avrdude.conf"
+	new_config = "C:\Users\danny\.platformio\packages\tool-avrdude\avrdude.conf"
 	for entry in old_flags:
 		if "avrdude.conf" in entry:
 			new_flags.append(new_config)
