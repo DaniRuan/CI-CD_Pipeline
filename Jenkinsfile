@@ -1,10 +1,6 @@
 pipeline {
     agent any
 
-    //environment {
-    //    PLATFORMIO_HOME = 'C:\\Users\\danny\\OneDrive\\Documents\\PlatformIO\\Projects\\Test_hardware'
-    //}
-
     stages {
         stage('Checkout') {
             steps {
@@ -18,7 +14,8 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat 'pio test -d, --project-dir C:\\Users\\danny\\OneDrive\\Documents\\EDAG\\Codes\\Test_hardware'
+                bat 'pio test -vvv'
+                //'pio test -d, --project-dir C:\\Users\\danny\\OneDrive\\Documents\\EDAG\\Codes\\Test_hardware'
             }
         }
     }
