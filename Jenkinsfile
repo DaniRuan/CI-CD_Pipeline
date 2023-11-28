@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat '\033[31m pio test -vvv \033[0m'
+                bat 'pio test -vvv'
             }
         }
     }
