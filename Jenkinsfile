@@ -1,14 +1,8 @@
 pipeline {
     agent any
     options { 
-    timestamps ()
-    ansiColor('xterm'){
-        ansiblePlaybook(
-            //playbook: 'path/to/playbook.yml',
-            //inventory: 'path/to/inventory.ini',
-            //credentialsId: 'sample-ssh-key',
-            colorized: true)
-        }
+        timestamps ()
+        ansiColor('xterm')
     }
     
     stages {
@@ -24,6 +18,9 @@ pipeline {
         }
         stage('Test') {
             steps {
+            ansiColor('xterm') {
+                ansiblePlaybook colorized: true, installation: 'ansible2.5.11', inventory: 'inventory/hosts', playbook: 'playbooks/example.yml'
+            }
                 bat 'pio test -vvv'
             }
         }
