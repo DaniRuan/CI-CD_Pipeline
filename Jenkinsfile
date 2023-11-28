@@ -2,7 +2,13 @@ pipeline {
     agent any
     options { 
     timestamps ()
-    ansiColor('xterm')
+    ansiColor('xterm'){
+        ansiblePlaybook(
+            //playbook: 'path/to/playbook.yml',
+            //inventory: 'path/to/inventory.ini',
+            //credentialsId: 'sample-ssh-key',
+            colorized: true)
+        }
     }
     
     stages {
