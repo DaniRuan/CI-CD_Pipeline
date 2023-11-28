@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                echo "\033[32m System testing started... \033[0m'
+                echo '\033[32m System testing started... \033[0m'
             }
         }
         stage('Test') {
