@@ -1,0 +1,5 @@
+- name: Run PlatformIO Test
+ hosts: all
+ tasks:
+    - name: Run PlatformIO Test
+      command: pio test
