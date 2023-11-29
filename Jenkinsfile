@@ -19,9 +19,9 @@ pipeline {
         stage('Test') {
             steps {
             ansiColor('xterm') {
-                ansiblePlaybook colorized: true, installation: 'ansible2.5.11', inventory: 'inventory/hosts', playbook: 'playbooks/example.yml'
-            }
                 bat 'pio test -vvv'
+            }
+                
             }
         }
     }
